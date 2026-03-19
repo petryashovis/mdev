@@ -18,7 +18,6 @@ void main(List<String> arguments) {
 
 void searchWikipedia(List<String>? arguments) async {
   final String articleTitle;
-
   if (arguments == null || arguments.isEmpty) {
     print('Please provide an article title.');
     final inputFromStdin = stdin.readLineSync();
@@ -32,8 +31,9 @@ void searchWikipedia(List<String>? arguments) async {
   }
 
   print('Looking up articles about "$articleTitle". Please wait.');
-  print('Here ya go!');
-  print('(Pretend this is an article about "$articleTitle")');
+
+  var articleContent = await getWikipediaArticle(articleTitle);
+  print(articleContent);
 }
 
 void printUsage() {
