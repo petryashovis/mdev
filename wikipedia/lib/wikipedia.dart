@@ -9,3 +9,9 @@ export 'src/model/title_set.dart';
 int calculate() {
   return 6 * 7;
 }
+
+
+// C:\tmp\vogu\mdev\wikipedia>dart test
+// Building package executable...
+// Built test:test.
+// 00:00 +3: All tests passed!
