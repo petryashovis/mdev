@@ -42,3 +42,6 @@ void main() {
     });
   });
 }
+
+// C:\tmp\vogu\mdev\wikipedia>dart test
+// 00:01 +4: All tests passed!
