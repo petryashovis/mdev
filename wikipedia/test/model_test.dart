@@ -9,3 +9,9 @@ import 'package:wikipedia/src/model/summary.dart';
 const String dartLangSummaryJson = './test/test_data/dart_lang_summary.json';
 const String catExtractJson = './test/test_data/cat_extract.json';
 const String openSearchResponse = './test/test_data/open_search_response.json';
+
+void main() {
+  group('deserialize example JSON responses from wikipedia API', () {
+    // Tests will go here
+  });
+}
