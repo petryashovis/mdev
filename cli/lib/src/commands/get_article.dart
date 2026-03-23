@@ -50,3 +50,6 @@ class GetArticleCommand extends Command {
     }
   }
 }
+
+// C:\tmp\vogu\mdev\cli>dart run bin/cli.dart search blahblahblahblah
+// Search results:Blah Blah Blah (Blahzay Blahzay album) - https://en.wikipedia.org/wiki/Blah_Blah_Blah_(Blahzay_Blahzay_album)
