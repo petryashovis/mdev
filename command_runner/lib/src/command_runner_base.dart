@@ -1,13 +1,12 @@
 import 'dart:async';
 import 'dart:collection';
 import 'dart:io';
-
 import 'arguments.dart';
 import 'exceptions.dart';
 
 class CommandRunner {
-  
-  
+  CommandRunner({this.onError});
+
   final Map<String, Command> _commands = <String, Command>{};
 
   UnmodifiableSetView<Command> get commands =>
@@ -105,7 +104,6 @@ class CommandRunner {
         i++;
       }
     } else {
-      // Throw an exception if more than one positional argument is provided.
       if (results.commandArg != null && results.commandArg!.isNotEmpty) {
         throw ArgumentException(
           'Commands can only have up to one argument.',
